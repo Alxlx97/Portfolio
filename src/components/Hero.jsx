@@ -17,10 +17,9 @@ export default function Hero() {
             id="hero"
             className="relative min-h-screen flex flex-col justify-end px-12 pb-20 overflow-hidden"
         >
-            {/* Subtle radial glow */}
+
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_40%,rgba(255,255,255,0.015)_0%,transparent_70%)]" />
 
-            {/* Background grid */}
             <div
                 className="absolute top-0 right-0 w-1/2 h-full opacity-[0.03] pointer-events-none"
                 style={{
@@ -30,27 +29,27 @@ export default function Hero() {
                 }}
             />
 
-            {/* Content */}
+
             <div ref={ref} className="fade-up relative z-10">
-                {/* Eyebrow */}
+
                 <p className="flex items-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-[#6e6e6e] mb-6">
                     <span className="inline-block w-8 h-px bg-[#3a3a3a]" />
                     Available for work
                 </p>
 
-                {/* Name */}
+
                 <h1 className="font-serif text-[clamp(3.5rem,9vw,8rem)] leading-none tracking-tight mb-4">
-                    John<br />
-                    <em className="text-[#6e6e6e]">Doe.</em>
+                    Alexandre<br />
+                    <em className="text-[#6e6e6e]">Lemieux</em>
                 </h1>
 
-                {/* Tagline */}
+
                 <p className="text-[#6e6e6e] font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mb-12">
                     Full-stack developer with a passion for clean interfaces
                     and solid back-end architecture. Based anywhere, building everywhere.
                 </p>
 
-                {/* CTAs */}
+
                 <div className="flex items-center gap-8">
                     <button
                         onClick={() => scrollTo('#projects')}
@@ -67,7 +66,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Scroll indicator */}
+
             <div className="absolute bottom-10 right-12 flex flex-col items-center gap-2">
                 <div className="w-px h-12 bg-gradient-to-b from-[#3a3a3a] to-transparent animate-pulse" />
                 <span
