@@ -4,7 +4,7 @@ import useFadeIn from "../hooks/UseFadeIn.jsx";
 
     //Contact Data
     const contactLinks = [
-        {label: "email", value: "Alexandre1997Lemieux@outlook.com", href: "mailto:Alexandre1997Lemieux@outlook.com"},
+        {label: "email", value: "AlexandreLemieux.dev@outlook.com", href: "mailto:AlexandreLemieux.dev@outlook.com"},
         {label: "LinkedIn", value: "linkedin.com/in/alexandre-lemieux-0039a8307/", href: "https://www.linkedin.com/in/alexandre-lemieux-0039a8307/"},
         {label: "GitHub", value: "github.com/Alxlx97", href: "https://github.com/Alxlx97"}
     ]
