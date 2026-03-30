@@ -31,6 +31,7 @@ It includes:
 
 ###  FridgeBuddy
 Desktop inventory tracker built with C# and WPF, allowing users to manage items, quantities, and quick updates.
+https://github.com/Alxlx97/FridgeBuddy
 
 ### Mésocycle
 Web application for managing workout programs and exercises with full CRUD functionality and backend integration.  
