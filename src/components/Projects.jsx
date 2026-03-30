@@ -1,4 +1,7 @@
 import useFadeIn from '../hooks/useFadeIn.jsx'
+import fridgeBuddyImg from '../assets/images/FridgeBuddy.png'
+import mesocycleImg from '../assets/images/Mesocycle.png'
+import focusSphereImg from '../assets/images/FocusSphere.png'
 
 const projects = [
     {
@@ -8,7 +11,7 @@ const projects = [
         desc: "FridgeBuddy is a desktop inventory tracker that helps users manage drinks in a virtual fridge, " +
             "including quantities, serving sizes, and quick stock updates.",
         stack: ["C#", ".NET", "MVVM"],
-        image: "src/assets/images/FridgeBuddy.png",
+        image: fridgeBuddyImg,
         href: "https://github.com/Alxlx97/FridgeBuddy",
     },
     {
@@ -17,7 +20,7 @@ const projects = [
         type: "Web App",
         desc: "Web application for managing workout programs and exercices, including a full CRUD operations and backend integration.",
         stack: ["Vue.Js", ".NET", "SQL"],
-        image: "src/assets/images/Mesocycle.png",
+        image: mesocycleImg,
         href: '#',
     },
     {
@@ -26,7 +29,7 @@ const projects = [
         type: "Dashboard",
         desc: "Collaborative productivity web application featuring a sidebar-based interface for tools and content management.",
         stack: ["Vue.js", "Express.js", "MongoDB"],
-        image: "src/assets/images/FocusSphere.png",
+        image: focusSphereImg,
         href: '#',
     }
 ]
