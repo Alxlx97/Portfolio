@@ -3,15 +3,14 @@
 const skills = {
     'Front-end': [{label: 'HTML5'}, {label: 'CSS3'}, {label: 'Sass'}, {label: 'JavaScript'}, {label: 'Bootstrap'}, {label: 'Tailwind CSS'}, {label: 'Vue.js'}, {
         label: 'React',
-        learning: true
     },],
     'Back-end': [{label: 'Node.js'}, {label: 'PHP'}, {label: 'Laravel'}, {label: 'Python'}, {label: 'Django'}, {label: 'C#'}, {label: '.NET'},],
     'Tools & Concepts': [{label: 'JSON'}, {label: 'AJAX'}, {label: 'DOM'}, {label: 'REST APIs'}, {label: 'Git'},],
 }
 
-function SkillTags({label, learning = false}) {
-    return (<span className={`font-mono-custom text-[0.65rem] tracking-[.05em] px-3 py-1.5 border transition-all duration-300 cursor-default
-        ${learning ? 'border-dashed border-[#3a3a3a] text-[#3a3a3a] hover:border-[#e8e6e0] hover:text-[#e8e6e0]' : 'border-[#2a2a2a] text-[#6e6e6e] hover:border-[#e8e6e0] hover:text-[#e8e6e0]'}`}> {label}{learning && ' ✦'} </span>)
+function SkillTags({label}) {
+    return (<span className="font-mono-custom text-[0.65rem] tracking-[.05em] px-3 py-1.5 border transition-all duration-300 cursor-default
+border-dashed border-[#e8e6e0] text-[#e8e6e0]"> {label} </span>)
 }
 
 export default function About() {
@@ -39,20 +38,26 @@ export default function About() {
                         <p>
                             I'm a{' '}
                             <strong className="text-[#e8e6e0] font-medium">full-stack developer</strong>{' '}
-                            who thrives at the intersection of design and engineering. I care
-                            deeply about the details — from pixel-perfect interfaces to
-                            well-structured APIs.
+                            working at the intersection of design and engineering, with attention to detail from clean
+                            interfaces to well-structured APIs.
                         </p>
                         <p>
                             My background spans both{' '}
                             <strong className="text-[#e8e6e0] font-medium">front-end and back-end</strong>{' '}
-                            development, with experience in everything from building responsive
-                            UIs to designing database architectures and RESTful services.
+                            development, from building responsive UIs to working with databases and RESTful services.
                         </p>
                         <p>
-                            I'm always expanding my stack. Currently diving deeper into{' '}
-                            <strong className="text-[#e8e6e0] font-medium">React</strong> to
-                            complement my Vue.js experience and broaden my front-end expertise.
+                            I'm continuously expanding my stack, currently focusing on <strong
+                            className="text-[#e8e6e0] font-medium"> React </strong> to complement my <strong
+                            className="text-[#e8e6e0] font-medium">Vue.js </strong>
+                            experience and strengthen my skills
+                        </p>
+
+                        <p className="text-[#6e6e6e] font-light text-[clamp(.55rem,1vw,1rem)] leading-relaxed max-w-md mb-12">
+                            This portfolio was built using <strong
+                            className="text-[#e8e6e0] font-medium"> React </strong>, <strong
+                            className="text-[#e8e6e0] font-medium"> Vite </strong>, and <strong
+                            className="text-[#e8e6e0] font-medium"> Tailwind CSS </strong>
                         </p>
                     </div>
                 </div>
@@ -67,9 +72,6 @@ export default function About() {
                         </div>
                     </div>))}
 
-                    <p className="font-mono-custom text-[0.62rem] tracking-[0.8em] text-[#3a3a3a] pt-2">
-                        ✦ currently learning
-                    </p>
                 </div>
 
             </div>

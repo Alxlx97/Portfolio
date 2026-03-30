@@ -73,7 +73,6 @@ export default function Contact(){
 
                 <p className="text-[#6e6e6e] text-base leading-relaxed mb-10 font-light">
                     Have a project in mind or looking to bring a developer on board?
-                    I'd love to hear from you.
                 </p>
 
                 <div ref={linksRef} className="fade-up border-t border-[#2a2a2a] mb-12">
