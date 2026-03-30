@@ -10,7 +10,7 @@ const projects = [
         type: "WPF App",
         desc: "FridgeBuddy is a desktop inventory tracker that helps users manage drinks in a virtual fridge, " +
             "including quantities, serving sizes, and quick stock updates.",
-        stack: ["C#", ".NET", "MVVM"],
+        stack: ["C#", ".NET", "JSON"],
         image: fridgeBuddyImg,
         href: "https://github.com/Alxlx97/FridgeBuddy",
     },
