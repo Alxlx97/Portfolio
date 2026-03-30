@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import useFadeIn from "../hooks/UseFadeIn.jsx";
+import useFadeIn from "../hooks/useFadeIn.jsx";
 
     //Contact Data
     const contactLinks = [

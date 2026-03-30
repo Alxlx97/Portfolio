@@ -1,4 +1,4 @@
-﻿import useFadeIn from "../hooks/UseFadeIn";
+﻿import useFadeIn from "../hooks/useFadeIn.jsx";
 
 const skills = {
     'Front-end': [{label: 'HTML5'}, {label: 'CSS3'}, {label: 'Sass'}, {label: 'JavaScript'}, {label: 'Bootstrap'}, {label: 'Tailwind CSS'}, {label: 'Vue.js'}, {
