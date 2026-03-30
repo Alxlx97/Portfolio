@@ -3,8 +3,10 @@ export default function Footer() {
         <footer className="border-t border-[#2a2a2a] pt-8">
             <div className="flex justify-around">
                 <div>
-                    <p className="font-mono text-[#6e6e6e]">Copyright © 2026 - Alexandre Lemieux - Tous droits
-                        réservés</p>
+                    <p className="font-mono text-[#6e6e6e]">
+                        Copyright © 2026 - Alexandre Lemieux - All rights reserved.
+
+                    </p>
                 </div>
                 <div>
                     <div className="flex items-center gap-8">
