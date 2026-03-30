@@ -1,6 +1,6 @@
 # Portfolio
 
-Modern developer portfolio built with React, Vite, and Tailwind CSS to showcase my projects and skills.
+Modern developer portfolio to showcase my projects and skills.
 
 ## Live Demo
 
