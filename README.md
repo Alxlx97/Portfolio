@@ -4,7 +4,7 @@ Modern developer portfolio built with React, Vite, and Tailwind CSS to showcase 
 
 ## Live Demo
 
-https://alexlemieux-portfolio.vercel.app/
+https://alexandrelemieux-portfolio.vercel.app/
 
 ---
 
