@@ -11,7 +11,9 @@ export default function Footer() {
                 <div>
                     <div className="flex items-center gap-8">
                         <a href="https://www.linkedin.com/in/alexandre-lemieux-0039a8307/"
-                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0] transition-colors">Linkedln
+                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0]
+                           transition-colors" target="_blank" rel="noreferrer">
+                            Linkedln
                                     <span className="[&>svg]:h-5 [&>svg]:w-5">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512"
                                            className="w-3.5 h-3.5 shrink-0 mx-3">
@@ -21,7 +23,8 @@ export default function Footer() {
                                     </span>
                         </a>
                         <a href="https://github.com/Alxlx97"
-                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0] transition-colors">
+                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0]
+                           transition-colors" target="_blank" rel="noreferrer">
                             GitHub
                                     <span className="[&>svg]:h-5 [&>svg]:w-5">
                                       <svg className="w-3.5 h-3.5 shrink-0 mx-3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
