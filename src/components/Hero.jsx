@@ -35,7 +35,7 @@ export default function Hero() {
 
                 <p className="flex items-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-[#6e6e6e] mb-6">
                     <span className="inline-block w-8 h-px bg-[#3a3a3a]"/>
-                    Available for work
+                    Disponible pour travailler
                 </p>
 
 
@@ -46,7 +46,7 @@ export default function Hero() {
 
 
                 <p className="text-[#6e6e6e] font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mb-12">
-                    Full-stack developer building clean, modern applications.
+                    Développeur full-stack qui crée des applications modernes et soignées.
                 </p>
 
 
@@ -55,13 +55,13 @@ export default function Hero() {
                         onClick={() => scrollTo('#projects')}
                         className="inline-flex items-center gap-2 px-7 py-3 border border-[#e8e6e0] text-[#e8e6e0] font-mono-custom text-[0.7rem] tracking-[.12em] uppercase hover:bg-[#e8e6e0] hover:text-[#0a0a0a] transition-all duration-300"
                     >
-                        View work
+                        Voir mes projets
                     </button>
                     <button
                         onClick={() => scrollTo('#contact')}
                         className="inline-flex items-center gap-2 font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0] transition-colors duration-300"
                     >
-                        Get in touch
+                        Me contacter
                     </button>
                 </div>
             </div>
@@ -73,7 +73,7 @@ export default function Hero() {
                     className="font-mono-custom text-[0.6rem] tracking-[.15em] uppercase text-[#3a3a3a]"
                     style={{writingMode: 'vertical-rl'}}
                 >
-          Scroll
+          Défiler
         </span>
             </div>
         </section>

@@ -5,7 +5,7 @@ const skills = {
         label: 'React',
     },],
     'Back-end': [{label: 'Node.js'}, {label: 'PHP'}, {label: 'Laravel'}, {label: 'Python'}, {label: 'Django'}, {label: 'C#'}, {label: '.NET'},],
-    'Tools & Concepts': [{label: 'JSON'}, {label: 'AJAX'}, {label: 'DOM'}, {label: 'REST APIs'}, {label: 'Git'},],
+    'Outils & Concepts': [{label: 'JSON'}, {label: 'AJAX'}, {label: 'DOM'}, {label: 'REST APIs'}, {label: 'Git'},],
 }
 
 function SkillTags({label}) {
@@ -23,7 +23,7 @@ export default function About() {
 
             <p ref={labelRef}
                className="fade-up font-mono-custom text-[0.65rem] tracking-[.02em] uppercase text-[#3a3a3a] mb-12 flex items-center gap-3">
-                <span>01 -</span> About &amp; Skills
+                <span>01 -</span> À propos &amp; Compétences
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-24 items-start">
@@ -31,32 +31,32 @@ export default function About() {
                 <div ref={textRef} className="fade-up">
 
                     <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-light mb-8">
-                        Building things <br/> that <em className="text-[#6e6e6e]">matter.</em>
+                        Créer des choses <br/> qui ont du <em className="text-[#6e6e6e]">sens.</em>
                     </h2>
 
                     <div className="space-y-5 text-[#6e6e6e] text-[1.05rem] leading-relaxed font-light">
                         <p>
-                            I'm a{' '}
-                            <strong className="text-[#e8e6e0] font-medium">full-stack developer</strong>{' '}
-                            working at the intersection of design and engineering, with attention to detail from clean
-                            interfaces to well-structured APIs.
+                            Je suis un{' '}
+                            <strong className="text-[#e8e6e0] font-medium">développeur full-stack</strong>{' '}
+                            qui travaille à l'intersection du design et de l'ingénierie, avec une attention particulière
+                            aux détails, des interfaces soignées aux APIs bien structurées.
                         </p>
                         <p>
-                            My background spans both{' '}
-                            <strong className="text-[#e8e6e0] font-medium">front-end and back-end</strong>{' '}
-                            development, from building responsive UIs to working with databases and RESTful services.
+                            Mon parcours couvre le développement{' '}
+                            <strong className="text-[#e8e6e0] font-medium">front-end et back-end</strong>{' '}
+                            , de la création d'interfaces responsives au travail avec des bases de données et des services RESTful.
                         </p>
                         <p>
-                            I'm continuously expanding my stack, currently focusing on <strong
-                            className="text-[#e8e6e0] font-medium"> React </strong> to complement my <strong
+                            J'élargis continuellement mes compétences, en me concentrant actuellement sur <strong
+                            className="text-[#e8e6e0] font-medium"> React </strong> pour compléter mon expérience avec <strong
                             className="text-[#e8e6e0] font-medium">Vue.js </strong>
-                            experience and strengthen my skills
+                            et renforcer mes aptitudes.
                         </p>
 
                         <p className="text-[#6e6e6e] font-light text-[clamp(.55rem,1vw,1rem)] leading-relaxed max-w-md mb-12">
-                            This portfolio was built using <strong
+                            Ce portfolio a été construit avec <strong
                             className="text-[#e8e6e0] font-medium"> React </strong>, <strong
-                            className="text-[#e8e6e0] font-medium"> Vite </strong>, and <strong
+                            className="text-[#e8e6e0] font-medium"> Vite </strong> et <strong
                             className="text-[#e8e6e0] font-medium"> Tailwind CSS </strong>
                         </p>
                     </div>

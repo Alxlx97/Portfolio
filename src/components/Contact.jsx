@@ -4,7 +4,7 @@ import useFadeIn from "../hooks/useFadeIn.jsx";
 
     //Contact Data
     const contactLinks = [
-        {label: "email", value: "AlexandreLemieux.dev@outlook.com", href: "mailto:AlexandreLemieux.dev@outlook.com"},
+        {label: "courriel", value: "AlexandreLemieux.dev@outlook.com", href: "mailto:AlexandreLemieux.dev@outlook.com"},
         {label: "LinkedIn", value: "linkedin.com/in/alexandre-lemieux-0039a8307/", href: "https://www.linkedin.com/in/alexandre-lemieux-0039a8307/"},
         {label: "GitHub", value: "github.com/Alxlx97", href: "https://github.com/Alxlx97"}
     ]
@@ -68,11 +68,11 @@ export default function Contact(){
                 </p>
 
                 <h2 ref={titleRef} className="fade-up font-serif text-[clam(2em,2vw,3.5rem)] leading-tight tracking-light mb-6">
-                    Let's work <br /> <em className="text-[#6e6e6e]"></em>
+                    Travaillons <br /> <em className="text-[#6e6e6e]">ensemble.</em>
                 </h2>
 
                 <p className="text-[#6e6e6e] text-base leading-relaxed mb-10 font-light">
-                    Have a project in mind or looking to bring a developer on board?
+                    Vous avez un projet en tête ou cherchez à recruter un développeur ?
                 </p>
 
                 <div ref={linksRef} className="fade-up border-t border-[#2a2a2a] mb-12">
@@ -86,46 +86,46 @@ export default function Contact(){
 
                         <div className="flex flex-col gap-2">
                             <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
-                                Name
+                                Nom
                             </label>
-                            <input className={inputClass} type="text" name="name" value={form.name} onChange={handleChange} placeholder="Your name" required />
+                            <input className={inputClass} type="text" name="name" value={form.name} onChange={handleChange} placeholder="Votre nom" required />
                         </div>
 
                         <div className="flex flex-col gap-2">
                             <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
-                                Email
+                                Courriel
                             </label>
-                            <input className={inputClass} type="email" name="email" value={form.email} onChange={handleChange} placeholder="Your email" required />
+                            <input className={inputClass} type="email" name="email" value={form.email} onChange={handleChange} placeholder="Votre courriel" required />
                         </div>
 
                         <div className="flex flex-col gap-2">
                             <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
-                                Subject
+                                Sujet
                             </label>
-                            <input className={inputClass} type="text" name="subject" value={form.subject} onChange={handleChange} placeholder="What's this about?" required />
+                            <input className={inputClass} type="text" name="subject" value={form.subject} onChange={handleChange} placeholder="De quoi s'agit-il ?" required />
                         </div>
 
                         <div className="flex flex-col gap-2">
                             <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
                                 Message
                             </label>
-                            <textarea className={`${inputClass} resize-none`} name="message" rows={5} value={form.message} onChange={handleChange} placeholder="Tell me about your project" required />
+                            <textarea className={`${inputClass} resize-none`} name="message" rows={5} value={form.message} onChange={handleChange} placeholder="Parlez-moi de votre projet" required />
                         </div>
 
                         {sent ? (
                             <p className="font-mono-custom text-[0.7rem] tracking-[.1em] text-[#6e6e6e]">
-                                Message sent — I'll get back to you soon!
+                                Message envoyé — Je vous répondrai bientôt !
                             </p>
                         ) : (
                             <>
                                 <button type="submit" disabled={loading} className="inline-flex items-center gap-3 px-8 py-3.5 border border-[#e8e6e0] text-[#e8e6e0]
                                 font-mono-custom text-[0.7rem] tracking-[.12em] uppercase bg-transparent hover:bg-[#e8e6e0]
                                 hover:text-[#0a0a0a] transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed">
-                                    {loading ? "Sending..." : "Send message"}
+                                    {loading ? "Envoi en cours..." : "Envoyer le message"}
                                 </button>
                                 {error && (
                                     <p className="font-mono-custom text-[0.7rem] tracking-[.1em] text-red-500">
-                                        Something went wrong — please try again.
+                                        Une erreur s'est produite — veuillez réessayer.
                                     </p>
                                 )}
                             </>

@@ -7,9 +7,9 @@ const projects = [
     {
         id: 1,
         title: "FridgeBuddy",
-        type: "WPF App",
-        desc: "FridgeBuddy is a desktop inventory tracker that helps users manage drinks in a virtual fridge, " +
-            "including quantities, serving sizes, and quick stock updates.",
+        type: "Application WPF",
+        desc: "FridgeBuddy est un gestionnaire d'inventaire de bureau qui aide les utilisateurs à gérer leurs boissons dans un réfrigérateur virtuel, " +
+            "incluant les quantités, les tailles de portion et des mises à jour rapides des stocks.",
         stack: ["C#", ".NET", "JSON"],
         image: fridgeBuddyImg,
         href: "https://github.com/Alxlx97/FridgeBuddy",
@@ -17,8 +17,8 @@ const projects = [
     {
         id: 2,
         title: "Mésocycle",
-        type: "Web App",
-        desc: "Web application for managing workout programs and exercices, including a full CRUD operations and backend integration.",
+        type: "Application Web",
+        desc: "Application web pour la gestion de programmes d'entraînement et d'exercices, incluant des opérations CRUD complètes et une intégration backend.",
         stack: ["Vue.Js", ".NET", "SQL"],
         image: mesocycleImg,
         href: '#',
@@ -26,8 +26,8 @@ const projects = [
     {
         id: 3,
         title: "FocusSphère",
-        type: "Dashboard",
-        desc: "Collaborative productivity web application featuring a sidebar-based interface for tools and content management.",
+        type: "Tableau de bord",
+        desc: "Application web de productivité collaborative dotée d'une interface à panneau latéral pour la gestion d'outils et de contenu.",
         stack: ["Vue.js", "Express.js", "MongoDB"],
         image: focusSphereImg,
         href: '#',
@@ -65,7 +65,7 @@ function ProjectCard({project}) {
                     <div
                         className="absolute inset-0 bg-[#1c1c1c] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span className="font-mono-custom text-[0.65rem] tracking-[.12em] uppercase text-[#6e6e6e]">
-                            View on GitHub
+                            Voir sur GitHub
                         </span>
                     </div>
                 )}
@@ -117,14 +117,14 @@ export default function Projects() {
                 ref={labelRef}
                 className="fade-up font-mono-custom text-[0.65rem] tracking-[.2em] uppercase text-[#3a3a3a] mb-12 flex items-center gap-3"
             >
-                <span>02 —</span> Selected Work
+                <span>02 —</span> Travaux sélectionnés
             </p>
 
             <h2
                 ref={titleRef}
                 className="fade-up font-serif text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-tight mb-12"
             >
-                Recent<br/><em className="text-[#6e6e6e]">projects.</em>
+                Projets<br/><em className="text-[#6e6e6e]">récents.</em>
             </h2>
 
             {/* Grid — separated by 1.5px lines using gap + background trick */}

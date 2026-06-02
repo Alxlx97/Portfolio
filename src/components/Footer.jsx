@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="flex justify-around">
                 <div>
                     <p className="font-mono text-[#6e6e6e]">
-                        Copyright © 2026 - Alexandre Lemieux - All rights reserved.
+                        Copyright © 2026 - Alexandre Lemieux - Tous droits réservés.
 
                     </p>
                 </div>
