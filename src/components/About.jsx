@@ -47,17 +47,9 @@ export default function About() {
                             , de la création d'interfaces responsives au travail avec des bases de données et des services RESTful.
                         </p>
                         <p>
-                            J'élargis continuellement mes compétences, en me concentrant actuellement sur <strong
-                            className="text-[#e8e6e0] font-medium"> React </strong> pour compléter mon expérience avec <strong
-                            className="text-[#e8e6e0] font-medium">Vue.js </strong>
-                            et renforcer mes aptitudes.
-                        </p>
-
-                        <p className="text-[#6e6e6e] font-light text-[clamp(.55rem,1vw,1rem)] leading-relaxed max-w-md mb-12">
-                            Ce portfolio a été construit avec <strong
-                            className="text-[#e8e6e0] font-medium"> React </strong>, <strong
-                            className="text-[#e8e6e0] font-medium"> Vite </strong> et <strong
-                            className="text-[#e8e6e0] font-medium"> Tailwind CSS </strong>
+                            Je me concentre également sur le développement{' '}
+                            <strong className="text-[#e8e6e0] font-medium">d'applications WPF</strong>{' '}
+                            avec des interfaces simples et faciles à utiliser pour les utilisateurs.
                         </p>
                     </div>
                 </div>
