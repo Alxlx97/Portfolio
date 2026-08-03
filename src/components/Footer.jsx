@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="border-t border-[#2a2a2a] pt-8">
+        <footer className="border-t border-[#2a2a2a] pt-8 pb-8">
             <div className="flex justify-around">
                 <div>
                     <p className="font-mono text-[#6e6e6e]">
