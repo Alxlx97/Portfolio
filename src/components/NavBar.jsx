@@ -9,13 +9,35 @@ const links = [
 
 export default function NavBar() {
     const [scrolled, setScrolled] = useState(false)
-    const [active] = useState('#hero')
+    const [active, setActive] = useState('#hero')
     const [menuOpen, setMenuOpen] = useState(false)
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 40)
         window.addEventListener('scroll', onScroll)
         return () => window.removeEventListener('scroll', onScroll)
+    }, []);
+
+    useEffect(() => {
+        const sections = links
+            .map(({href}) => document.querySelector(href))
+            .filter(Boolean)
+
+        const observer = new IntersectionObserver(
+            entries => {
+                const visible = entries
+                    .filter(entry => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+
+                if (visible.length > 0) {
+                    setActive(`#${visible[0].target.id}`)
+                }
+            },
+            {rootMargin: '-45% 0px -45% 0px', threshold: 0}
+        )
+
+        sections.forEach(section => observer.observe(section))
+        return () => observer.disconnect()
     }, []);
 
     const handleClick = (e, href) => {
