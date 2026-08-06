@@ -1,5 +1,3 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import useFadeIn from "../hooks/useFadeIn.jsx";
 
     //Contact Data
@@ -28,36 +26,7 @@ export default function Contact(){
         const labelRef = useFadeIn();
         const titleRef = useFadeIn();
         const linksRef = useFadeIn();
-        const formRef = useFadeIn();
 
-        const [form, setForm] = useState({ name: '', email: '', subject: '', message: ''});
-        const [sent, setSent] = useState(false);
-        const [loading, setLoading] = useState(false);
-        const [error, setError] = useState(false);
-
-        const handleChange = (e) => setForm(prev => ({...prev, [e.target.name]: e.target.value}));
-
-        const handleSubmit = (e) => {
-            e.preventDefault();
-            setLoading(true);
-            setError(false);
-            emailjs.send(
-                import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-                { from_name: form.name, from_email: form.email, subject: form.subject, message: form.message },
-                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-            ).then(() => {
-                setSent(true);
-            }).catch((err) => {
-                console.error("EmailJS error:", err);
-                setError(true);
-            }).finally(() => {
-                setLoading(false);
-            });
-        }
-
-        const inputClass = "w-full bg-[#111111] border border-[#2a2a2a] text-[#e8e6e0] placeholder-[#3a3a3a] px-4 py-3 text-sm font-light " +
-            "outline-none focus:border-[#e8e6e0] transition-colors duration-30";
 
     return(
         <section id="contact" className="px-12 py-28 border-t border-[#2a2a2a] bg-[#0a0a0a]">
@@ -80,59 +49,6 @@ export default function Contact(){
                         <ContactLink key={link.label} {...link} />
                     ))}
                 </div>
-
-                <form ref={formRef} onSubmit={handleSubmit} className="fade-up space-y-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-                        <div className="flex flex-col gap-2">
-                            <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
-                                Nom
-                            </label>
-                            <input className={inputClass} type="text" name="name" value={form.name} onChange={handleChange} placeholder="Votre nom" required />
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                            <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
-                                Courriel
-                            </label>
-                            <input className={inputClass} type="email" name="email" value={form.email} onChange={handleChange} placeholder="Votre courriel" required />
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                            <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
-                                Sujet
-                            </label>
-                            <input className={inputClass} type="text" name="subject" value={form.subject} onChange={handleChange} placeholder="De quoi s'agit-il ?" required />
-                        </div>
-
-                        <div className="flex flex-col gap-2">
-                            <label className="font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#3a3a3a]">
-                                Message
-                            </label>
-                            <textarea className={`${inputClass} resize-none`} name="message" rows={5} value={form.message} onChange={handleChange} placeholder="Parlez-moi de votre projet" required />
-                        </div>
-
-                        {sent ? (
-                            <p className="font-mono-custom text-[0.7rem] tracking-[.1em] text-[#6e6e6e]">
-                                Message envoyé — Je vous répondrai bientôt !
-                            </p>
-                        ) : (
-                            <>
-                                <button type="submit" disabled={loading} className="inline-flex items-center gap-3 px-8 py-3.5 border border-[#e8e6e0] text-[#e8e6e0]
-                                font-mono-custom text-[0.7rem] tracking-[.12em] uppercase bg-transparent hover:bg-[#e8e6e0]
-                                hover:text-[#0a0a0a] transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed">
-                                    {loading ? "Envoi en cours..." : "Envoyer le message"}
-                                </button>
-                                {error && (
-                                    <p className="font-mono-custom text-[0.7rem] tracking-[.1em] text-red-500">
-                                        Une erreur s'est produite — veuillez réessayer.
-                                    </p>
-                                )}
-                            </>
-                        )}
-                    </div>
-                </form>
-
             </div>
         </section>
     )
