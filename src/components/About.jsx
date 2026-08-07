@@ -22,8 +22,8 @@ export default function About() {
         <section id="about" className="px-12 py-28 border-t border-[#2a2a2a] bg-[#0a0a0a]">
 
             <p ref={labelRef}
-               className="fade-up font-mono-custom text-[0.65rem] tracking-[.02em] uppercase text-[#3a3a3a] mb-12 flex items-center gap-3">
-                <span>01 -</span> À propos &amp; Compétences
+               className="fade-up font-mono-custom text-[0.65rem] tracking-[.02em] uppercase text-[#a8a59d] mb-12 flex items-center gap-3">
+                À propos
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-24 items-start">
@@ -31,10 +31,10 @@ export default function About() {
                 <div ref={textRef} className="fade-up">
 
                     <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-light mb-8">
-                        Créer des choses <br/> qui ont du <em className="text-[#6e6e6e]">sens.</em>
+                        Créer des choses <br/> qui ont du <em className="text-[#94918a]">sens.</em>
                     </h2>
 
-                    <div className="space-y-5 text-[#6e6e6e] text-[1.05rem] leading-relaxed font-light">
+                    <div className="space-y-5 text-[#a8a59d] text-[1.05rem] leading-relaxed font-light">
                         <p>
                             Je suis un{' '}
                             <strong className="text-[#e8e6e0] font-medium">développeur full-stack</strong>{' '}

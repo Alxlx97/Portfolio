@@ -3,7 +3,7 @@ export default function Footer() {
         <footer className="border-t border-[#2a2a2a] pt-8 pb-8">
             <div className="flex justify-around">
                 <div>
-                    <p className="font-mono text-[#6e6e6e]">
+                    <p className="font-mono text-[#a8a59d]">
                         Copyright © 2026 - Alexandre Lemieux - Tous droits réservés.
 
                     </p>
@@ -11,7 +11,7 @@ export default function Footer() {
                 <div>
                     <div className="flex items-center gap-8">
                         <a href="https://www.linkedin.com/in/alexandre-lemieux-0039a8307/"
-                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0]
+                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#a8a59d] hover:text-[#e8e6e0]
                            transition-colors" target="_blank" rel="noreferrer">
                             Linkedln
                                     <span className="[&>svg]:h-5 [&>svg]:w-5">
@@ -23,7 +23,7 @@ export default function Footer() {
                                     </span>
                         </a>
                         <a href="https://github.com/Alxlx97"
-                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0]
+                           className="flex justify-around font-mono-custom text-xs tracking-[.15em] uppercase text-[#a8a59d] hover:text-[#e8e6e0]
                            transition-colors" target="_blank" rel="noreferrer">
                             GitHub
                                     <span className="[&>svg]:h-5 [&>svg]:w-5">

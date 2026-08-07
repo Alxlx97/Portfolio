@@ -64,7 +64,7 @@ function ProjectCard({project}) {
                 {project.href !=="#" &&(
                     <div
                         className="absolute inset-0 bg-[#1c1c1c] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span className="font-mono-custom text-[0.65rem] tracking-[.12em] uppercase text-[#6e6e6e]">
+                        <span className="font-mono-custom text-[0.65rem] tracking-[.12em] uppercase text-[#a8a59d]">
                             Voir sur GitHub
                         </span>
                     </div>
@@ -84,7 +84,7 @@ function ProjectCard({project}) {
                     {project.title}
                 </h3>
 
-                <p className="text-sm text-[#6e6e6e] leading-relaxed mb-5 font-light">
+                <p className="text-sm text-[#a8a59d] leading-relaxed mb-5 font-light">
                     {project.desc}
                 </p>
 
@@ -115,16 +115,16 @@ export default function Projects() {
         >
             <p
                 ref={labelRef}
-                className="fade-up font-mono-custom text-[0.65rem] tracking-[.2em] uppercase text-[#3a3a3a] mb-12 flex items-center gap-3"
+                className="fade-up font-mono-custom text-[0.65rem] tracking-[.2em] uppercase text-[#a8a59d] mb-12 flex items-center gap-3"
             >
-                <span>02 —</span> Travaux sélectionnés
+                 Projets
             </p>
 
             <h2
                 ref={titleRef}
                 className="fade-up font-serif text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-tight mb-12"
             >
-                Projets<br/><em className="text-[#6e6e6e]">récents.</em>
+                Projets<br/><em className="text-[#a8a59d]">récents.</em>
             </h2>
 
             {/* Grid — separated by 1.5px lines using gap + background trick */}

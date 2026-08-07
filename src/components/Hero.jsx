@@ -33,7 +33,7 @@ export default function Hero() {
 
             <div ref={ref} className="fade-up relative z-10">
 
-                <p className="flex items-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-[#6e6e6e] mb-6">
+                <p className="flex items-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-[#a8a59d] mb-6">
                     <span className="inline-block w-8 h-px bg-[#3a3a3a]"/>
                     Disponible pour travailler
                 </p>
@@ -41,11 +41,11 @@ export default function Hero() {
 
                 <h1 className="font-serif text-[clamp(3.5rem,9vw,8rem)] leading-none tracking-tight mb-4">
                     Alexandre<br/>
-                    <em className="text-[#6e6e6e]">Lemieux</em>
+                    <em className="text-[#a8a59d]">Lemieux</em>
                 </h1>
 
 
-                <p className="text-[#6e6e6e] font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mb-12">
+                <p className="text-[#a8a59d] font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mb-12">
                     Développeur full-stack qui crée des applications modernes et soignées.
                 </p>
 
@@ -59,7 +59,7 @@ export default function Hero() {
                     </button>
                     <button
                         onClick={() => scrollTo('#contact')}
-                        className="inline-flex items-center gap-2 font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#6e6e6e] hover:text-[#e8e6e0] transition-colors duration-300"
+                        className="inline-flex items-center gap-2 font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#a8a59d] hover:text-[#e8e6e0] transition-colors duration-300"
                     >
                         Me contacter
                     </button>
