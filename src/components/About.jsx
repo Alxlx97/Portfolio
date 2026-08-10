@@ -56,7 +56,7 @@ export default function About() {
 
                 <div ref={skillRef} className="fade-up space-y-6">
                     {Object.entries(skills).map(([category, tags]) => (<div key={category}>
-                        <h4 className="font-mono-custom text-[0.65rem] tracking-[.15em] uppercase text-[#3a3a3a] mb-3">
+                        <h4 className="font-mono-custom text-[0.65rem] tracking-[.15em] uppercase text-[#a8a59d] mb-3">
                             {category}
                         </h4>
                         <div className="flex flex-wrap gap-2">
