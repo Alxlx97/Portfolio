@@ -18,7 +18,7 @@ const translations = {
         },
         hero: {
             available: 'Disponible pour travailler',
-            tagline: 'Développeur full-stack qui crée des applications modernes et soignées.',
+            tagline: 'Développeur d\'applications qui crée des applications modernes et soignées.',
             seeProjects: 'Voir mes projets',
             contactMe: 'Me contacter',
             scroll: 'Défiler',
@@ -27,7 +27,7 @@ const translations = {
             label: 'À propos',
             title: <>Créer des choses <br/> qui ont du <em className="text-subtle">sens.</em></>,
             paragraphs: [
-                <>Je suis un {strong('développeur full-stack')} qui travaille à l'intersection du design et de
+                <>Je suis un {strong('développeur d\'applications ')} qui travaille à l'intersection du design et de
                     l'ingénierie, avec une attention particulière aux détails, des interfaces soignées aux APIs bien
                     structurées.</>,
                 <>Mon parcours couvre le développement {strong('front-end et back-end')}, de la création d'interfaces
@@ -86,7 +86,7 @@ const translations = {
         },
         hero: {
             available: 'Available for work',
-            tagline: 'Full-stack developer building modern, polished applications.',
+            tagline: 'Software developer building modern, polished applications.',
             seeProjects: 'View my projects',
             contactMe: 'Contact me',
             scroll: 'Scroll',
@@ -95,7 +95,7 @@ const translations = {
             label: 'About',
             title: <>Building things <br/> that <em className="text-subtle">matter.</em></>,
             paragraphs: [
-                <>I'm a {strong('full-stack developer')} working at the intersection of design and engineering,
+                <>I'm a {strong('software developer')} working at the intersection of design and engineering,
                     with a strong attention to detail, from polished interfaces to well-structured APIs.</>,
                 <>My experience covers both {strong('front-end and back-end')} development, from building
                     responsive interfaces to working with databases and RESTful services.</>,
