@@ -1,7 +1,9 @@
 ﻿import {useEffect, useRef} from "react";
+import {useLanguage} from "../i18n/languageContext.js";
 
 export default function Hero() {
     const ref = useRef(null);
+    const {t} = useLanguage();
 
     useEffect(() => {
         const el = ref.current
@@ -25,7 +27,7 @@ export default function Hero() {
                 className="absolute top-0 right-0 w-1/2 h-full opacity-[0.03] pointer-events-none"
                 style={{
                     backgroundImage:
-                        'linear-gradient(#2a2a2a 1px, transparent 1px), linear-gradient(90deg, #2a2a2a 1px, transparent 1px)',
+                        'linear-gradient(rgb(var(--c-line)) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--c-line)) 1px, transparent 1px)',
                     backgroundSize: '60px 60px',
                 }}
             />
@@ -33,47 +35,47 @@ export default function Hero() {
 
             <div ref={ref} className="fade-up relative z-10">
 
-                <p className="flex items-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-[#a8a59d] mb-6">
-                    <span className="inline-block w-8 h-px bg-[#3a3a3a]"/>
-                    Disponible pour travailler
+                <p className="flex items-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-muted mb-6">
+                    <span className="inline-block w-8 h-px bg-faint"/>
+                    {t.hero.available}
                 </p>
 
 
                 <h1 className="font-serif text-[clamp(3.5rem,9vw,8rem)] leading-none tracking-tight mb-4">
                     Alexandre<br/>
-                    <em className="text-[#a8a59d]">Lemieux</em>
+                    <em className="text-muted">Lemieux</em>
                 </h1>
 
 
-                <p className="text-[#a8a59d] font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mb-12">
-                    Développeur full-stack qui crée des applications modernes et soignées.
+                <p className="text-muted font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mb-12">
+                    {t.hero.tagline}
                 </p>
 
 
                 <div className="flex items-center gap-8">
                     <button
                         onClick={() => scrollTo('#projects')}
-                        className="inline-flex items-center gap-2 px-7 py-3 border border-[#e8e6e0] text-[#e8e6e0] font-mono-custom text-[0.7rem] tracking-[.12em] uppercase hover:bg-[#e8e6e0] hover:text-[#0a0a0a] transition-all duration-300"
+                        className="inline-flex items-center gap-2 px-7 py-3 border border-ink text-ink font-mono-custom text-[0.7rem] tracking-[.12em] uppercase hover:bg-ink hover:text-canvas transition-all duration-300"
                     >
-                        Voir mes projets
+                        {t.hero.seeProjects}
                     </button>
                     <button
                         onClick={() => scrollTo('#contact')}
-                        className="inline-flex items-center gap-2 font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-[#a8a59d] hover:text-[#e8e6e0] transition-colors duration-300"
+                        className="inline-flex items-center gap-2 font-mono-custom text-[0.7rem] tracking-[.12em] uppercase text-muted hover:text-ink transition-colors duration-300"
                     >
-                        Me contacter
+                        {t.hero.contactMe}
                     </button>
                 </div>
             </div>
 
 
             <div className="absolute bottom-10 right-12 flex flex-col items-center gap-2">
-                <div className="w-px h-12 bg-gradient-to-b from-[#3a3a3a] to-transparent animate-pulse"/>
+                <div className="w-px h-12 bg-gradient-to-b from-faint to-transparent animate-pulse"/>
                 <span
-                    className="font-mono-custom text-[0.6rem] tracking-[.15em] uppercase text-[#3a3a3a]"
+                    className="font-mono-custom text-[0.6rem] tracking-[.15em] uppercase text-faint"
                     style={{writingMode: 'vertical-rl'}}
                 >
-          Défiler
+          {t.hero.scroll}
         </span>
             </div>
         </section>
