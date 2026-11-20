@@ -15,7 +15,7 @@ export default function Hero() {
     const scrollTo = (id) => document.querySelector(id)?.scrollIntoView({behavior: 'smooth'});
 
     return (
-        <section id="hero" className="relative min-h-screen flex flex-col justify-end px-12 pb-20 overflow-hidden text-center">
+        <section id="hero" className="relative min-h-screen flex flex-col justify-center pb-24 overflow-hidden text-center">
 
             <div
                 className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_40%,rgba(255,255,255,0.015)_0%,transparent_70%)]"/>
