@@ -17,6 +17,8 @@ export default {
         subtle: token('subtle'),            // accent italic text
         muted: token('muted'),              // body text
         ink: token('ink'),                  // primary text
+        tag: token('tag'),                  // tech tag background
+        'tag-ink': token('tag-ink'),        // tech tag text
       },
     },
   },

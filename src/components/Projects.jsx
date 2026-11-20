@@ -89,7 +89,7 @@ function ProjectCard({project}) {
                     {project.stack.map(tag => (
                         <span
                             key={tag}
-                            className="font-mono-custom text-[0.6rem] px-2 py-1 bg-canvas border border-line text-light"
+                            className="font-mono-custom text-[0.6rem] px-2 py-1 bg-tag border border-line text-tag-ink"
                         >
               {tag}
             </span>

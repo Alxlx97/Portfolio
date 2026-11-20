@@ -19,6 +19,8 @@
     --c-subtle: 148 145 138;       /* #94918a */
     --c-muted: 168 165 157;        /* #a8a59d */
     --c-ink: 232 230 224;          /* #e8e6e0 */
+    --c-tag: 10 10 10;             /* #0a0a0a — tech tag background */
+    --c-tag-ink: 232 230 224;      /* #e8e6e0 — tech tag text */
     color-scheme: dark;
   }
   :root[data-theme="light"] {
@@ -32,6 +34,8 @@
     --c-subtle: 119 116 109;       /* #77746d */
     --c-muted: 95 92 85;           /* #5f5c55 */
     --c-ink: 26 26 26;             /* #1a1a1a */
+    --c-tag: 17 17 17;             /* #111111 — black tech tags */
+    --c-tag-ink: 245 244 240;      /* #f5f4f0 */
     color-scheme: light;
   }
   html { scroll-behavior: smooth; }
