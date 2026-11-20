@@ -43,7 +43,7 @@ const translations = {
         },
         projects: {
             label: 'Projets',
-            title: <>Projets<br/><em className="text-muted">récents.</em></>,
+            title: <>Projets <em className="text-muted"> récents.</em></>,
             viewOnGithub: 'Voir sur GitHub',
             items: {
                 fridgeBuddy: {
@@ -110,7 +110,7 @@ const translations = {
         },
         projects: {
             label: 'Projects',
-            title: <>Recent<br/><em className="text-muted">projects.</em></>,
+            title: <>Recent<em className="text-muted"> projects.</em></>,
             viewOnGithub: 'View on GitHub',
             items: {
                 fridgeBuddy: {

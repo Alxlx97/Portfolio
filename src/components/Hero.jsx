@@ -15,10 +15,7 @@ export default function Hero() {
     const scrollTo = (id) => document.querySelector(id)?.scrollIntoView({behavior: 'smooth'});
 
     return (
-        <section
-            id="hero"
-            className="relative min-h-screen flex flex-col justify-end px-12 pb-20 overflow-hidden"
-        >
+        <section id="hero" className="relative min-h-screen flex flex-col justify-end px-12 pb-20 overflow-hidden text-center">
 
             <div
                 className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_40%,rgba(255,255,255,0.015)_0%,transparent_70%)]"/>
@@ -33,9 +30,9 @@ export default function Hero() {
             />
 
 
-            <div ref={ref} className="fade-up relative z-10">
+            <div ref={ref} className="fade-up relative z-10 text-center">
 
-                <p className="flex items-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-muted mb-6">
+                <p className="flex items-center justify-center gap-4 font-mono-custom text-[0.7rem] tracking-[.2em] uppercase text-muted mb-6">
                     <span className="inline-block w-8 h-px bg-faint"/>
                     {t.hero.available}
                 </p>
@@ -47,12 +44,12 @@ export default function Hero() {
                 </h1>
 
 
-                <p className="text-muted font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mb-12">
+                <p className="text-muted font-light text-[clamp(.95rem,1.5vw,1.15rem)] leading-relaxed max-w-md mx-auto mb-12">
                     {t.hero.tagline}
                 </p>
 
 
-                <div className="flex items-center gap-8">
+                <div className="flex items-center justify-center gap-8">
                     <button
                         onClick={() => scrollTo('#projects')}
                         className="inline-flex items-center gap-2 px-7 py-3 border border-ink text-ink font-mono-custom text-[0.7rem] tracking-[.12em] uppercase hover:bg-ink hover:text-canvas transition-all duration-300"

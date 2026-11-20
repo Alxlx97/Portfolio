@@ -32,17 +32,17 @@ export default function Contact(){
 
     return(
         <section id="contact" className="px-12 py-28 border-t border-line bg-canvas">
-            <div className="max-w-2xl">
+            <div className="max-w-2xl mx-auto">
 
-                <p ref={labelRef} className="fade-up font-mono-custom text-light text-[0.65rem] tracking-[.2em] uppercase text-muted mb-12 flex items-center gap-3">
+                <p ref={labelRef} className="fade-up font-mono-custom text-light text-[0.65rem] tracking-[.2em] uppercase text-muted mb-12 flex items-center justify-center gap-3">
                     <span>{t.contact.label}</span>
                 </p>
 
-                <h2 ref={titleRef} className="fade-up font-serif text-[clam(2em,2vw,3.5rem)] leading-tight tracking-light mb-6">
+                <h2 ref={titleRef} className="fade-up font-serif text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-tight mb-6 text-center">
                     {t.contact.title}
                 </h2>
 
-                <p className="text-muted text-base leading-relaxed mb-10 font-light">
+                <p className="text-muted text-base leading-relaxed mb-10 font-light text-center">
                     {t.contact.intro}
                 </p>
 

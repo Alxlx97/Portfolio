@@ -113,14 +113,14 @@ export default function Projects() {
         >
             <p
                 ref={labelRef}
-                className="fade-up font-mono-custom text-[0.65rem] tracking-[.2em] uppercase text-muted mb-12 flex items-center gap-3"
+                className="fade-up font-mono-custom text-[0.65rem] tracking-[.2em] uppercase text-muted mb-12 flex items-center justify-center gap-3"
             >
                 {t.projects.label}
             </p>
 
             <h2
                 ref={titleRef}
-                className="fade-up font-serif text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-tight mb-12"
+                className="fade-up font-serif text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-tight mb-12 text-center"
             >
                 {t.projects.title}
             </h2>
