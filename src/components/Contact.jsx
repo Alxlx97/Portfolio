@@ -34,7 +34,7 @@ export default function Contact(){
         <section id="contact" className="px-12 py-28 border-t border-line bg-canvas">
             <div className="max-w-2xl">
 
-                <p ref={labelRef} className="fade-up font-mono-custom text-[0.65rem] tracking-[.2em] uppercase text-muted mb-12 flex items-center gap-3">
+                <p ref={labelRef} className="fade-up font-mono-custom text-light text-[0.65rem] tracking-[.2em] uppercase text-muted mb-12 flex items-center gap-3">
                     <span>{t.contact.label}</span>
                 </p>
 

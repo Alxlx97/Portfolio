@@ -1,4 +1,4 @@
-/* eslint-disable react-refresh/only-export-components */
+ 
 // All user-facing text, per language. French is the default/main language.
 
 const strong = (text) => <strong className="text-ink font-medium">{text}</strong>;

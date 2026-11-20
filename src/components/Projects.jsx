@@ -32,7 +32,6 @@ const projects = [
 ]
 
 function ProjectCard({project}) {
-    const num = String(project.id).padStart(3, '0')
     const {t} = useLanguage()
     const {type, desc} = t.projects.items[project.key]
 
@@ -73,8 +72,7 @@ function ProjectCard({project}) {
             {/* Card body */}
             <div className="p-10">
                 <div className="flex items-center justify-between mb-3">
-                    <span className="font-mono-custom text-[0.6rem] text-faint">{num}</span>
-                    <span className="font-mono-custom text-[0.6rem] tracking-[.1em] uppercase text-faint">
+                    <span className="font-mono-custom text-[0.6rem] tracking-[.1em] uppercase text-light">
             {type}
           </span>
                 </div>
@@ -91,7 +89,7 @@ function ProjectCard({project}) {
                     {project.stack.map(tag => (
                         <span
                             key={tag}
-                            className="font-mono-custom text-[0.6rem] px-2 py-1 bg-canvas border border-line text-faint"
+                            className="font-mono-custom text-[0.6rem] px-2 py-1 bg-canvas border border-line text-light"
                         >
               {tag}
             </span>
@@ -127,7 +125,6 @@ export default function Projects() {
                 {t.projects.title}
             </h2>
 
-            {/* Grid — separated by 1.5px lines using gap + background trick */}
             <div
                 ref={cardsRef}
                 className="fade-up grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-line"
