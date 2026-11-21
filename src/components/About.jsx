@@ -5,8 +5,8 @@ const skills = {
     frontend: [{label: 'HTML5'}, {label: 'CSS3'}, {label: 'Sass'}, {label: 'JavaScript'}, {label: 'TypeScript'}, {label: 'Bootstrap'}, {label: 'Tailwind CSS'}, {label: 'Vue.js'}, {
         label: 'React',
     },],
-    backend: [{label: 'Node.js'}, {label: 'PHP'}, {label: 'Laravel'}, {label: 'Python'}, {label: 'Django'}, {label: 'C#'}, {label: '.NET'},],
-    tools: [{label: 'JSON'}, {label: 'AJAX'}, {label: 'DOM'}, {label: 'REST APIs'}, {label: 'Git'},],
+    backend: [{label: 'C#'}, {label: '.NET'}, {label: 'PHP'}, {label: 'Laravel'}, {label: 'Python'}, {label: 'Django'}, {label: 'Node.js'},],
+    tools: [{label: 'JSON'}, {label: 'AJAX'}, {label: 'DOM'}, {label: 'MVVM'}, {label: 'REST APIs'}, {label: 'Git'},],
 }
 
 function SkillTags({label}) {
